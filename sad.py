@@ -29,4 +29,4 @@ class Sad(Smiley):
                 eyes = self.YELLOW
             self.pixels[pixel] = eyes
 
-    
+
