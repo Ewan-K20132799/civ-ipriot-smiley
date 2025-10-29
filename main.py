@@ -5,8 +5,9 @@ That is, delete the sense_hat.py file that is included in this bundle."""
 import time
 
 from happy import Happy
+from sad import Sad
 
-def main():
+def main_happy():
     smiley = Happy()
 
     smiley.show()
@@ -15,11 +16,23 @@ def main():
 
     smiley.blink()
 
+def main_sad():
+    smiley = Sad()
+
+    smiley.show()
+
+    time.sleep(1)
+
+    smiley.blink()
+
+
 if __name__ == '__main__':
     ############################################################
     # Uncomment the lines below only if you have multi-processing issues
     # from multiprocessing import freeze_support
     # freeze_support()
     ############################################################
-    main()
+    main_happy()
+
+    main_sad()
 

@@ -253,6 +253,8 @@ Include a screenshot of the sad smiley or the modified `main.py`:
 - Observe and document the Sad smiley as it blinks its eyes. Describe any adjustments or issues encountered during implementation.
 
   > Your answer here
+  > I decided to make an adjustment to main.py by adding a method to call the Sad class and its functions separately from the method that
+  > calls the happy class, this was to avoid the sensehat crashing due to multiple executions. 
 
   ### 2.8. If It Walks Like a Duck…
 
@@ -261,22 +263,32 @@ Include a screenshot of the sad smiley or the modified `main.py`:
   1. **Class Type Analysis:** What kind of class is `Blinkable`? Inspect its superclass for clues about its classification.
 
      > Your answer here
+     > Blinkable is a abstract class that specifies blink-ability with in the class it is used in. Without the use of this class,
+     > it can blink by being defined in the file each that it is being implemented in rather than carrying it over using abstraction (although abstraction is quicker to do).
 
   2. **Class Implementation:** `Blinkable` is a class intended to be implemented by other classes. What generic term describes this kind of class, which is designed for implementation by others? **Clue**: Notice the lack of any concrete implementation and the naming convention.
 
   > Your answer here
+  > This is an abstract class as it is being implemented from the blinkable.py as a super class without any concrete method functionality.
+  > It is effectively a template designed for later use.
 
   3. **OO Principle Identification:** Regarding your answer to question (2), which Object-Oriented (OO) principle does this represent? Choose from the following and justify your answer in 1-2 sentences: Abstraction, Polymorphism, Inheritance, Encapsulation.
 
   > Your answer here
+  > This represents the abstraction principle as it is used to abstract functionality from methods in a class that have no defined functionality.
 
   4. **Implementation Flexibility:** Explain why you could grant the Sad Smiley a blinking feature similar to the Happy Smiley's implementation, even without directly using `Blinkable`.
 
   > Your answer here
+  > This could be done as even without the Blinkable class, the method can have its functionality defined by what exists in 
+  > the class that it is in.
 
   5. **Concept and Language Specificity:** In relation to your response to question (4), what is this capability known as, and why is it feasible in Python and many other dynamically typed languages but not in most statically typed programming languages like C#? **Clue** This concept is hinted at in the title of this section.
 
   > Your answer here
+  > This capability is known as dynamic capability, this is what allows for methods to be implemented with less specificity behind its functionality.
+  > While it works in python it wouldn't work in a language such as C# as statistical languages such as C# require the user to
+  > specify the exact type of functionality needed in order for it to work.
 
   ***
 
